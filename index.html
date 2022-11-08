@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>信息统计</title>
+		<style type="">
+			body{
+				font-family: cursive;
+			}
+			table{
+				border-color:#072652;
+				position: relative;
+				top: 100px;
+				width: 600px;
+				height: 400px;
+			}
+			.firstLine{
+				background-color: #21252B;
+				color: #FFFFFF;
+			}
+			.mainLine{
+				background-color:#282C35;
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#">
+			<center><table border="1">
+				<tr>
+					<th class="firstLine" colspan="3">信息统计表</th>
+				</tr>
+				<tr>
+					<th class="mainLine" colspan="1">姓名</th>
+					<th class="mainLine">
+						<input id="name" name="name" />
+					</th>
+				</tr>
+				<tr>
+					<th class="mainLine" colspan="1">年龄</th>
+					<th class="mainLine">
+						<input id="age" name="age"/>
+					</th>
+				</tr>
+				<tr>
+					<th class="mainLine" colspan="1">性别</th>
+					<th class="mainLine" colspan="2" >
+						<input type="radio" checked="checked" name="sex" value="0"/>男
+						<input type="radio" name="sex" value="1">女
+					</th>
+				</tr>
+				<tr>
+					<th class="mainLine" >爱好</th>
+					<th class="mainLine" >
+						<input type="checkbox" name="running" value="1">旅游
+						<input type="checkbox" name="running" value="2">爬山
+						<input type="checkbox" name="running" value="3">健身<br />
+						<input type="checkbox" name="running" value="4">健身
+						<input type="checkbox" name="running" value="5">上网
+						<input type="checkbox" name="running" value="6">游泳
+					</th>
+				</tr>
+				<tr>
+					<th class="mainLine" colspan="1">学历</th>
+					<th class="mainLine" colspan="2">
+						<select>
+							<option value="" >------请选择------</option>
+							<option value="1">大学</option>
+							<option value="2">高中</option>
+							<option value="3">初中</option>
+						</select>
+					</th>
+				</tr>
+				<tr>
+					<th class="mainLine" colspan="1">自我介绍</th>
+					<th class="mainLine">
+						<textarea style="overflow: auto;width: 500px;" rows="5" cols="10" id="myself" name="myself">自我介绍：</textarea>
+					</th>
+				</tr>
+				<tr>
+					<th class="mainLine" colspan="1"></th>
+					<th class="mainLine">
+						<input type="submit" value="提交"/>
+						<input type="reset"  value="重置"/>
+					</th>
+				</tr>
+			</table></center>
+		</form>
+	</body>
+</html>
